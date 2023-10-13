@@ -3,4 +3,4 @@ def digital_clock(n):
   return ((n // 60), (n % 60))
 
 #Invoke the function with any interger (seconds after midnight)
-print(digital_clock(150))
+print(digital_clock(59))
