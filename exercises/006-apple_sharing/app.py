@@ -1,10 +1,11 @@
 #Complete the function to return:
+import math
 #1) How many apples each single student will get.
 #2) How many apples wil remain in the basket.
 #Hint: You can resolve this exercise either importing the math module or without it 
 def apple_sharing(n,k):
   
-  return None
+  return (round(k/n), k%n)
  
     
 
