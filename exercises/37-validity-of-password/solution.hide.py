@@ -1,23 +1,23 @@
 import re
-def valid_password(password):
+def valid_password(text):
     value = []
-    items=[x for x in password.split(',')]
-    for p in items:
-        if len(p)<6 or len(p)>12:
+    pass_list=[x for x in text.split(',')]
+    for password in pass_list:
+        if len(password)<6 or len(password)>12:
             continue
         else:
             pass
-        if not re.search("[a-z]",p):
+        if not re.search("[a-z]",password):
             continue
-        elif not re.search("[0-9]",p):
+        elif not re.search("[0-9]",password):
             continue
-        elif not re.search("[A-Z]",p):
+        elif not re.search("[A-Z]",password):
             continue
-        elif not re.search("[$#@]",p):
+        elif not re.search("[$#@]",password):
             continue
-        elif re.search("\s",p):
+        elif re.search("\s",password):
             continue
         else:
             pass
-        value.append(p)
+        value.append(password)
     return (",".join(value))
