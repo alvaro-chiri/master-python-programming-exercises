@@ -7,4 +7,4 @@ words = freq.keys()
 words.sort()
 
 for w in words:
-    print ("%s:%d" % (w,freq[w]))
+    print(f"{w}:{freq[w]}")
